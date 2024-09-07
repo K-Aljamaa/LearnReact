@@ -1,38 +1,55 @@
-.App {
+/* src/App.css */
+
+.app {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list-books-title {
+  background: #2e7c31;
+  color: white;
+  padding: 20px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bookshelf {
+  padding: 0 20px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bookshelf-title {
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.book {
+  width: 140px;
+}
+
+.book-cover {
+  background-size: cover;
+  border-radius: 2px;
+}
+
+.book-shelf-changer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.open-search {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+.open-search a {
+  background-color: #2e7c31;
+  border-radius: 50%;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  font-size: 30px;
+  text-decoration: none;
 }
